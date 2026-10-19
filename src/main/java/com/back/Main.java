@@ -49,12 +49,9 @@ public class Main {
                 System.out.println("번호 / 작가 / 명언");
                 System.out.println("-----------------");
 
-                // 등록된 명언이 없는 경우
                 if (quotes.isEmpty()) {
                     System.out.println("등록된 명언이 없습니다.");
                 } else {
-                    // 최신순으로 보여주고 싶다면 아래처럼 역순으로 순회할 수도 있고,
-                    // 등록된 순서대로 보려면 일반 향상된 for문을 사용합니다.
                     for (int i = quotes.size() - 1; i >= 0; i--) {
                         Quote q = quotes.get(i);
                         System.out.println(q.id + " / " + q.author + " / " + q.content);
